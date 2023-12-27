@@ -6,3 +6,6 @@
 
 ### 12/25/23
 - Added User Input
+
+### 12/26/23
+- Added Functions
