@@ -7,5 +7,18 @@
 ### 12/25/23
 - Added User Input
 
-### 12/26/23
+### 12/26/23 50 Lines of code
 - Added Functions
+
+### 12/26/23 116 Lines of code
+- Added Several Functions
+- Passing Parameters
+- If/elsif logic
+- Added System("cls") <- No need for import!
+
+#### Note: Conversion can be done in one line! || Example: "variable_name" = gets.chomp().to_i
+
+### 12/ /23
+
+
+### 12/ /23

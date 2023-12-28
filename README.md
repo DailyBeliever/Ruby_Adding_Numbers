@@ -1,6 +1,6 @@
-# Ruby_Adding_Numbers
+# Ruby Full Calculator
 
-### Basic Ruby Program that will add two inputs..
+### Full On Ruby Calculator!
 - 1
 - 2
 - 3
