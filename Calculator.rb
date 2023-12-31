@@ -26,13 +26,33 @@ def main
     # System will clear the screen
     system("cls")
 
-
     # Goes to the Number Function | Passes parameter name to opeartors
     operators(name)
 
 # end of function
 end
 
+def next_op
+    puts "What did you want to do ?"
+    puts"
+    1 For Another 
+    2 For Exit
+    "
+
+    input = gets.chomp().to_i
+
+    if input == 1
+
+        operators(name)
+
+    elsif input == 2
+
+        system("exit")
+
+
+    end
+
+end
 
 def operators(name)
 
@@ -43,8 +63,9 @@ def operators(name)
     puts"
     1 For Addition
     2 For Subtraction
-    ... For Divison
-    ... For Multiplication
+    3 For Divison
+    4 For Multiplication
+    5 For Exit
     "
         # Takes the user input
         user_input = gets()
@@ -62,16 +83,15 @@ def operators(name)
 
             sub()
 
-        else
+    else
             
-            puts "You entered the wrong input!"
+        puts "You entered the wrong input!"
 
         end
 
     end
 
 end
-
 
 def add
 
@@ -96,9 +116,26 @@ def add
                         # Converts back to string
         puts "Result: " + result.to_s
 
+        # Goes to Next function
+        next_op()
+
     elsif input == 3
         
         puts "Enter first number"
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        second_num = gets.chomp().to_i       
+
+        puts "Enter third number"
+        third_num = gets.chomp().to_i       
+
+        result = first_num + second_num + third_num
+
+        puts "Result: " + result.to_s
+
+        # Goes to Next function
+        next_op()
         
     else
         
@@ -108,6 +145,15 @@ def add
     end
 
 end
+
+
+
+def sub
+
+
+end
+
+
 
 
 
