@@ -33,22 +33,22 @@ def main
 end
 
 def next_op
-    puts "What did you want to do ?"
+
+    system("cls")
+    puts "What did you want to do next?"
     puts"
     1 For Another 
     2 For Exit
     "
-
     input = gets.chomp().to_i
 
     if input == 1
 
-        operators(name)
+        operators()
 
     elsif input == 2
 
         system("exit")
-
 
     end
 
@@ -57,7 +57,7 @@ end
 def operators(name)
 
     puts name + " we need to define which operator you want to use!"
-    puts "Press any key to continue"
+    puts "Press any key to continue "
     enter = gets()
 
     puts"
@@ -67,27 +67,37 @@ def operators(name)
     4 For Multiplication
     5 For Exit
     "
-        # Takes the user input
-        user_input = gets()
+    # Takes the user input
+    user_input = gets()
 
-        # Converts user input to a string
-        user_input = user_input.to_i
+    # Converts user input to a string
+    user_input = user_input.to_i
 
-            # This take a string..
-        if user_input == 1
+     # This take a string..
+    if user_input == 1
 
-            add()
+        add()
             
 
-        if user_input == 2
+    elsif user_input == 2
 
-            sub()
+        sub()
+
+    elsif user_input == 3
+
+        mult()
+
+    elsif user_input == 4
+
+        div()
+
+    elsif user_input == 5
+
+        system("exit")
 
     else
             
         puts "You entered the wrong input!"
-
-        end
 
     end
 
@@ -104,17 +114,21 @@ def add
     if input == 2
 
         puts "Enter first number"
-        first_num = gets.chomp().to_i
         # first_num = first_num.to_i
+        first_num = gets.chomp().to_i
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i
         # second_num = first_num.to_i
-        
+        second_num = gets.chomp().to_i
+      
+        # Result
         result = first_num + second_num
 
                         # Converts back to string
         puts "Result: " + result.to_s
+
+        puts "Press any key to continue "
+        enter = gets()
 
         # Goes to Next function
         next_op()
@@ -134,9 +148,36 @@ def add
 
         puts "Result: " + result.to_s
 
+     
+        puts "Press any key to continue "
+        enter = gets()
+
         # Goes to Next function
         next_op()
+
+    elsif input == 4
         
+        puts "Enter first number"
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        second_num = gets.chomp().to_i       
+
+        puts "Enter third number"
+        third_num = gets.chomp().to_i      
+
+        puts "Enter fourth number"
+        fourth_num = gets.chomp().to_i  
+
+        result = first_num + second_num + third_num + fourth_num
+
+        puts "Result: " + result.to_s
+
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
     else
         
         puts "Wrong Input!"
@@ -148,13 +189,22 @@ end
 
 
 
+
 def sub
 
 
 end
 
 
+def mult
 
+
+end
+
+
+def div
+
+end
 
 
 

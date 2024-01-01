@@ -23,4 +23,6 @@
 - Updated Other functions
 - Added system("exit")
 
-### 12/ /23
+### 12/31/23
+- Bug Fixes
+- Finished Add Function
