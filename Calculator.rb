@@ -32,6 +32,7 @@ def main
 # end of function
 end
 
+
 def next_op
 
     system("cls")
@@ -53,6 +54,7 @@ def next_op
     end
 
 end
+
 
 def operators(name)
 
@@ -102,6 +104,7 @@ def operators(name)
     end
 
 end
+
 
 def add
 
@@ -188,21 +191,257 @@ def add
 end
 
 
-
-
 def sub
 
+    puts "How many numbers from 2-4?"
+    input = gets.chomp()
+
+    # This converts string to an int
+    input = input.to_i
+
+    if input == 2
+
+        puts "Enter first number"
+        # first_num = first_num.to_i
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        # second_num = first_num.to_i
+        second_num = gets.chomp().to_i
+      
+        # Result
+        result = first_num - second_num
+
+                        # Converts back to string
+        puts "Result: " + result.to_s
+
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+
+    elsif input == 3
+        
+        puts "Enter first number"
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        second_num = gets.chomp().to_i       
+
+        puts "Enter third number"
+        third_num = gets.chomp().to_i       
+
+        result = first_num - second_num - third_num
+
+        puts "Result: " + result.to_s
+
+     
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+
+    elsif input == 4
+        
+        puts "Enter first number"
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        second_num = gets.chomp().to_i       
+
+        puts "Enter third number"
+        third_num = gets.chomp().to_i      
+
+        puts "Enter fourth number"
+        fourth_num = gets.chomp().to_i  
+
+        result = first_num - second_num - third_num - fourth_num
+
+        puts "Result: " + result.to_s
+
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+    else
+        
+        puts "Wrong Input!"
+        puts "Try Again!"
+
+    end
 
 end
 
 
 def mult
 
+    puts "How many numbers from 2-4?"
+    input = gets.chomp()
+
+    # This converts string to an int
+    input = input.to_i
+
+    if input == 2
+
+        puts "Enter first number"
+        # first_num = first_num.to_i
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        # second_num = first_num.to_i
+        second_num = gets.chomp().to_i
+      
+        # Result
+        result = first_num * second_num
+
+                        # Converts back to string
+        puts "Result: " + result.to_s
+
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+
+    elsif input == 3
+        
+        puts "Enter first number"
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        second_num = gets.chomp().to_i       
+
+        puts "Enter third number"
+        third_num = gets.chomp().to_i       
+
+        result = first_num * second_num * third_num
+
+        puts "Result: " + result.to_s
+
+     
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+
+    elsif input == 4
+        
+        puts "Enter first number"
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        second_num = gets.chomp().to_i       
+
+        puts "Enter third number"
+        third_num = gets.chomp().to_i      
+
+        puts "Enter fourth number"
+        fourth_num = gets.chomp().to_i  
+
+        result = first_num * second_num * third_num * fourth_num
+
+        puts "Result: " + result.to_s
+
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+    else
+        
+        puts "Wrong Input!"
+        puts "Try Again!"
+
+    end
 
 end
 
 
 def div
+
+    puts "How many numbers from 2-4?"
+    input = gets.chomp()
+
+    # This converts string to an int
+    input = input.to_i
+
+    if input == 2
+
+        puts "Enter first number"
+        # first_num = first_num.to_i
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        # second_num = first_num.to_i
+        second_num = gets.chomp().to_i
+      
+        # Result
+        result = first_num / second_num
+
+                        # Converts back to string
+        puts "Result: " + result.to_s
+
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+
+    elsif input == 3
+        
+        puts "Enter first number"
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        second_num = gets.chomp().to_i       
+
+        puts "Enter third number"
+        third_num = gets.chomp().to_i       
+
+        result = first_num / second_num / third_num
+
+        puts "Result: " + result.to_s
+
+     
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+
+    elsif input == 4
+        
+        puts "Enter first number"
+        first_num = gets.chomp().to_i
+
+        puts "Enter second number"
+        second_num = gets.chomp().to_i       
+
+        puts "Enter third number"
+        third_num = gets.chomp().to_i      
+
+        puts "Enter fourth number"
+        fourth_num = gets.chomp().to_i  
+
+        result = first_num / second_num / third_num / fourth_num
+
+        puts "Result: " + result.to_s
+
+        puts "Press any key to continue "
+        enter = gets()
+
+        # Goes to Next function
+        next_op()
+    else
+        
+        puts "Wrong Input!"
+        puts "Try Again!"
+
+    end
 
 end
 

@@ -26,3 +26,6 @@
 ### 12/31/23
 - Bug Fixes
 - Finished Add Function
+
+### 1/1/24
+- Added logic to sub, mult, and div
