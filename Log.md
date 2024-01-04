@@ -29,3 +29,6 @@
 
 ### 1/1/24
 - Added logic to sub, mult, and div
+
+### 1/3/24
+- Added Global variable of $name to fix bug

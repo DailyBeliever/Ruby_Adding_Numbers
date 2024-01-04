@@ -1,5 +1,9 @@
 # This is my first Ruby program
 
+
+# Global Variable | $ is needed
+$name = ""
+
 # main fucntion called main..
 def main
 
@@ -11,10 +15,10 @@ def main
 
     print("What is your name? ")
     # stores user input into "input" variable
-    name = gets.chomp()
+    $name = gets.chomp()
 
     # prints out string with input
-    print ("Hello " + name + "! Welcome to the Calculator Program!")
+    print ("Hello " + $name + "! Welcome to the Calculator Program!")
 
     # Prints newline
     puts
@@ -27,7 +31,7 @@ def main
     system("cls")
 
     # Goes to the Number Function | Passes parameter name to opeartors
-    operators(name)
+    operators()
 
 # end of function
 end
@@ -56,9 +60,9 @@ def next_op
 end
 
 
-def operators(name)
+def operators()
 
-    puts name + " we need to define which operator you want to use!"
+    puts $name + " we need to define which operator you want to use!"
     puts "Press any key to continue "
     enter = gets()
 
