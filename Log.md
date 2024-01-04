@@ -32,3 +32,7 @@
 
 ### 1/3/24
 - Added Global variable of $name to fix bug
+
+### 1/4/24
+- Fixed Bug Issues
+- Cleaned Up code

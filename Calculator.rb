@@ -87,15 +87,15 @@ def operators()
 
     elsif user_input == 2
 
-        sub()
+        subt()
 
     elsif user_input == 3
 
-        mult()
+        div()
 
     elsif user_input == 4
 
-        div()
+        mult()
 
     elsif user_input == 5
 
@@ -195,7 +195,7 @@ def add
 end
 
 
-def sub
+def subt
 
     puts "How many numbers from 2-4?"
     input = gets.chomp()
@@ -448,7 +448,6 @@ def div
     end
 
 end
-
 
 
 # Start with the main function
