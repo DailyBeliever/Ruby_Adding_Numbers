@@ -1,8 +1,8 @@
-# Ruby Full Calculator
+# Classes
+### Made By Daily 
+#### Feel Free to use as long as credit is given to **Daily**
 
-### Full On Ruby Calculator!
-- 1
-- 2
-- 3
-
-work in progress...
+## How To Run
+1) Find the directory where program is located
+2) Run terminal from this directory
+2) Launch the program with  -> Ruby Calculator.rb

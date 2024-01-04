@@ -66,8 +66,7 @@ def operators()
     puts "Press any key to continue "
     enter = gets()
 
-    puts"
-    1 For Addition
+    puts"    1 For Addition
     2 For Subtraction
     3 For Divison
     4 For Multiplication
@@ -84,7 +83,6 @@ def operators()
 
         add()
             
-
     elsif user_input == 2
 
         subt()
@@ -104,6 +102,7 @@ def operators()
     else
             
         puts "You entered the wrong input!"
+        operators()
 
     end
 
@@ -122,11 +121,11 @@ def add
 
         puts "Enter first number"
         # first_num = first_num.to_i
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
         # second_num = first_num.to_i
-        second_num = gets.chomp().to_i
+        second_num = gets.chomp().to_f
       
         # Result
         result = first_num + second_num
@@ -143,13 +142,13 @@ def add
     elsif input == 3
         
         puts "Enter first number"
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i       
+        second_num = gets.chomp().to_f       
 
         puts "Enter third number"
-        third_num = gets.chomp().to_i       
+        third_num = gets.chomp().to_f       
 
         result = first_num + second_num + third_num
 
@@ -165,16 +164,16 @@ def add
     elsif input == 4
         
         puts "Enter first number"
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i       
+        second_num = gets.chomp().to_f       
 
         puts "Enter third number"
-        third_num = gets.chomp().to_i      
+        third_num = gets.chomp().to_f      
 
         puts "Enter fourth number"
-        fourth_num = gets.chomp().to_i  
+        fourth_num = gets.chomp().to_f  
 
         result = first_num + second_num + third_num + fourth_num
 
@@ -207,11 +206,11 @@ def subt
 
         puts "Enter first number"
         # first_num = first_num.to_i
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
         # second_num = first_num.to_i
-        second_num = gets.chomp().to_i
+        second_num = gets.chomp().to_f
       
         # Result
         result = first_num - second_num
@@ -228,13 +227,13 @@ def subt
     elsif input == 3
         
         puts "Enter first number"
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i       
+        second_num = gets.chomp().to_f    
 
         puts "Enter third number"
-        third_num = gets.chomp().to_i       
+        third_num = gets.chomp().to_f      
 
         result = first_num - second_num - third_num
 
@@ -250,16 +249,16 @@ def subt
     elsif input == 4
         
         puts "Enter first number"
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i       
+        second_num = gets.chomp().to_f     
 
         puts "Enter third number"
-        third_num = gets.chomp().to_i      
+        third_num = gets.chomp().to_f
 
         puts "Enter fourth number"
-        fourth_num = gets.chomp().to_i  
+        fourth_num = gets.chomp().to_f 
 
         result = first_num - second_num - third_num - fourth_num
 
@@ -292,11 +291,11 @@ def mult
 
         puts "Enter first number"
         # first_num = first_num.to_i
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
         # second_num = first_num.to_i
-        second_num = gets.chomp().to_i
+        second_num = gets.chomp().to_f
       
         # Result
         result = first_num * second_num
@@ -313,13 +312,13 @@ def mult
     elsif input == 3
         
         puts "Enter first number"
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i       
+        second_num = gets.chomp().to_f       
 
         puts "Enter third number"
-        third_num = gets.chomp().to_i       
+        third_num = gets.chomp().to_f       
 
         result = first_num * second_num * third_num
 
@@ -335,16 +334,16 @@ def mult
     elsif input == 4
         
         puts "Enter first number"
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i       
+        second_num = gets.chomp().to_f      
 
         puts "Enter third number"
-        third_num = gets.chomp().to_i      
+        third_num = gets.chomp().to_f     
 
         puts "Enter fourth number"
-        fourth_num = gets.chomp().to_i  
+        fourth_num = gets.chomp().to_f
 
         result = first_num * second_num * third_num * fourth_num
 
@@ -377,11 +376,11 @@ def div
 
         puts "Enter first number"
         # first_num = first_num.to_i
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
         # second_num = first_num.to_i
-        second_num = gets.chomp().to_i
+        second_num = gets.chomp().to_f
       
         # Result
         result = first_num / second_num
@@ -398,13 +397,13 @@ def div
     elsif input == 3
         
         puts "Enter first number"
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i       
+        second_num = gets.chomp().to_f      
 
         puts "Enter third number"
-        third_num = gets.chomp().to_i       
+        third_num = gets.chomp().to_f      
 
         result = first_num / second_num / third_num
 
@@ -420,16 +419,16 @@ def div
     elsif input == 4
         
         puts "Enter first number"
-        first_num = gets.chomp().to_i
+        first_num = gets.chomp().to_f
 
         puts "Enter second number"
-        second_num = gets.chomp().to_i       
+        second_num = gets.chomp().to_f       
 
         puts "Enter third number"
-        third_num = gets.chomp().to_i      
+        third_num = gets.chomp().to_f     
 
         puts "Enter fourth number"
-        fourth_num = gets.chomp().to_i  
+        fourth_num = gets.chomp().to_f  
 
         result = first_num / second_num / third_num / fourth_num
 
