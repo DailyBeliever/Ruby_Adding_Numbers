@@ -73,29 +73,28 @@ def operators()
     5 For Exit
     "
     # Takes the user input
-    user_input = gets()
+    user_input = gets.chomp.to_i
 
-    # Converts user input to a string
-    user_input = user_input.to_i
+    # Use a case statement with user_input as the input
+    case user_input
 
-     # This take a string..
-    if user_input == 1
+    when 1
 
         add()
             
-    elsif user_input == 2
+    when 2
 
         subt()
 
-    elsif user_input == 3
+    when 3
 
         div()
 
-    elsif user_input == 4
+    when 4
 
         mult()
 
-    elsif user_input == 5
+    when 5
 
         system("exit")
 

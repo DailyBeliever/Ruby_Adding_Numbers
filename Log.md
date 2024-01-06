@@ -36,3 +36,6 @@
 ### 1/4/24
 - Fixed Bug Issues
 - Cleaned Up code
+
+### 1/5/24
+- Added a Case Expression (Switch Statement)
